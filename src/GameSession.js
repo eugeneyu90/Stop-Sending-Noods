@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ArrowKeysReact from 'arrow-keys-react';
 
 const maxEnemies = 20
 const startingSpeedMax = 2
@@ -62,7 +61,7 @@ class GameSession extends Component {
 
   }
   componentDidMount() {
-    this.container.focus()
+    // this.container.focus()
     let canvasCtx = this.canvas.getContext('2d');
     this.setState({ canvasCtx: canvasCtx})
     this.draw()
